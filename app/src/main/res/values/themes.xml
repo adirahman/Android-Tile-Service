@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.TileScreen" parent="Theme.MaterialComponents.Light.NoActionBar" />
+
+    <style name="Theme.TileScreen.Dialog" parent="Theme.MaterialComponents.Light.Dialog" />
+
+    <style name="Theme.App.GhostInput" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Translucent window -->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+
+        <!-- No animation janky -->
+        <item name="android:windowAnimationStyle">@style/GhostWindowAnimation</item>
+
+        <!-- Optional: status bar -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="GhostWindowAnimation">
+        <!-- cepat dan halus -->
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+</resources>
