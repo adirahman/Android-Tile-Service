@@ -2,6 +2,12 @@
 
 Simple Android app that demonstrates a Quick Settings Tile (TileService) to capture a quick note, plus a small in-app viewer/editor.
 
+## Repository variants
+- XML version: `https://github.com/adirahman/Android-Tile-Service/tree/using-xml-layout`
+- Compose version: `https://github.com/adirahman/Android-Tile-Service/tree/using-compose-layout`
+
+By default, the `master` branch uses XML layouts.
+
 ## What this app does
 - Adds a Quick Settings tile labeled "ARC Quick Notes".
 - Tapping the tile opens a lightweight input overlay (`GhostInputActivity`) to edit and save a note.
