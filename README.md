@@ -3,8 +3,6 @@
 Simple Android app that demonstrates a Quick Settings Tile (TileService) to capture a quick note, plus a small in-app viewer/editor.
 
 ![Tiles 1](tiles-1.png)
-![Tiles 2](tiles-2.png)
-![Tiles 3](tiles-3.jpg)
 
 ## Repository variants
 - XML version: `https://github.com/adirahman/Android-Tile-Service/tree/using-xml-layout`
