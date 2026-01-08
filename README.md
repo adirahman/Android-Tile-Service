@@ -21,23 +21,21 @@ In this project:
 
 Even though the service is named `QuickStatusTileService`, the current behavior is to open the note input screen.
 
-## App flow (XML + Activity + Service)
+## App flow (Compose + Activity + Service)
 
 ### 1) Main screen
-- Layout: `app/src/main/res/layout/activity_main.xml`
-- Activity: `app/src/main/java/com/arc/tilescreen/MainActivity.kt`
+- UI: Jetpack Compose inside `app/src/main/java/com/arc/tilescreen/MainActivity.kt`
 - Flow:
-  - Collects note changes from `QuickNoteStore` and updates `tvQuickNote`.
+  - Collects note changes from `QuickNoteStore` and updates the Compose state.
   - Edit button opens `GhostInputActivity`.
   - Clear button removes note from DataStore.
   - Tapping the card shows a dialog with the current note.
 
 ### 2) Ghost input screen (overlay)
-- Layout: `app/src/main/res/layout/activity_ghost_input.xml`
-- Activity: `app/src/main/java/com/arc/tilescreen/GhostInputActivity.kt`
+- UI: Jetpack Compose inside `app/src/main/java/com/arc/tilescreen/GhostInputActivity.kt`
 - Flow:
   - Reads existing note from `QuickNoteStore` and pre-fills the field.
-  - Shows the keyboard after layout is ready.
+  - Shows the keyboard after Compose is ready.
   - Save stores the note and refreshes the tile label/state.
   - Clear deletes the note.
   - Dim area tap closes the screen.
